@@ -6,8 +6,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "npx prettier --write .",
-    "prepare": "husky install"
+    "lint": "eslint src --max-warnings=0",
+    "lint-fix": "eslint --fix",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged",
+    "format": "npx prettier --write ."
+  },
+  "lint-staged": {
+    "src/**/*": [
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "next": "14.0.3",
