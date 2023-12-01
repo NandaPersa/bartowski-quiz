@@ -13,7 +13,7 @@
     "format": "npx prettier --write ."
   },
   "lint-staged": {
-    "src/**/*": [
+    "src/app/**/*": [
       "eslint --fix"
     ]
   },
